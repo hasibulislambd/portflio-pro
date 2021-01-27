@@ -1,0 +1,118 @@
+*{
+       box-sizing: border-box;
+       
+}
+
+body{
+       margin: 0;
+       font-family: 'Fira Sans', sans-serif;
+}
+
+p{
+       font-size: 1.2rem;
+       text-align: justify;
+}
+h1{
+       text-align: center;
+}
+
+
+/* navbar design */
+
+.navbar{
+       background-color: rgb(9, 121, 121);
+       text-align: center;
+}
+
+.nav-logo img{
+       width: 120px;
+       height: 130px;
+       margin-top: 5px;
+}
+
+.nav-header h1{
+      font-size: 2.5rem;
+      text-transform: capitalize;
+      text-shadow: 2px 2px 4px violet;
+      margin: 0;
+}
+
+.nav-menu a{
+      text-decoration: none;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      color: white;
+      border-radius: 1000px;
+}
+
+.nav-menu a:hover{
+       background-color: rgb(32, 156, 156);
+}
+
+/* for mobile */
+[class*="col-"]{
+       width: 100%;
+}
+
+[class*="col-"]{
+       padding: 10px;
+       float: left;
+}
+
+.navbar::after{
+       content: '';
+       clear: both;
+       display: table;
+}
+
+/* profile design */
+
+img{
+       width: 120px;
+       height: 130px;
+}
+
+.profile{
+       text-align: center;
+       padding: 140px 10px;
+       position: relative;
+}
+
+.profile .top{
+       position: absolute;
+       right: 60px;
+       top: 20px;
+       transition: 2s transform ease;
+}
+
+.profile .top:hover{
+       transform: rotate(360deg);
+}
+
+.profile h1{
+       font-family: 'Satisfy', cursive;
+       font-size: 3rem;
+}
+
+.profile p{
+       color: gray;
+       text-align: center;
+       margin: auto 0px 30px auto;
+}
+
+.profile .bottom{
+       position: absolute;
+       left: 60px;
+       bottom: 10px;
+       transition: 2s transform ease;
+}
+
+.profile .bottom:hover{
+       transform: rotate(360deg);
+}
+
+
+
